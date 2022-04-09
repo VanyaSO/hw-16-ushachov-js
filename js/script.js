@@ -1,21 +1,19 @@
 'use strict'
 
 const number = +prompt('Ведите число');
-let isSimple = true;
+const degree = +prompt('Ведите степень');
 
-if(number === 1) {
-    console.log(false)
-} else if(number > 1) {
+function erection(num, deg = 1){
 
-
-    for (let i = 2; i < number; i++){
-        if(number % i === 0){
-            isSimple = false;
-            break;
-        }
+    if(Number.isNaN( num ) ){
+        return 'some error';
+    }else{
+        return alert( 'Ваш результат ' + num ** deg );
     }
-    console.log(isSimple)
 
 }
+
+erection(number,degree);
+
 
 

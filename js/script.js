@@ -1,6 +1,6 @@
 'use strict'
 
-const number = +prompt('Ведите число');
+const number = +prompt('Ведите любое число');
 const degree = +prompt('Ведите степень');
 
 function erection(num, deg = 1){

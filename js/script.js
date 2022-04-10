@@ -5,8 +5,8 @@ const degree = +prompt('Ведите степень');
 
 function erection(num, deg = 1){
 
-    if(Number.isNaN( num ) ){
-        return 'some error';
+    if(isNaN(num) || isNaN(deg)){
+        return alert('some error');
     }else{
         return alert( 'Ваш результат ' + num ** deg );
     }
@@ -14,6 +14,5 @@ function erection(num, deg = 1){
 }
 
 erection(number,degree);
-
 
 
